@@ -1,3 +1,2 @@
-# browneyed SOUL
-
-ALWAYS BE THERE
+# 7
+YMCA, shy, long hair, camp with Father 
