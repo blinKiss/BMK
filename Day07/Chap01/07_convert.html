@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료형 변환</title>
+    <script>
+        // ? -> 숫자 자료형 : Number()
+        // ? -> 문자열 자료형 : String()
+        // ? -> 불 자료형 : Boolean()
+
+        let strTen = '10'
+        let strResult = strTen + 20 // 1020
+        let ten = Number(strTen)
+        let result = ten + 20       // 30
+        console.log('strTen : ' + strTen)
+        console.log('result : ' + strResult)
+        console.log('result : ' + result)
+
+
+        let strFive = String(5)
+        let fiveResult = strFive + 55
+        console.log('fiveResult : ' + fiveResult)
+        
+
+        // Boolean  : false, null, undefined, 0, NaN, '' 을 제외하면 기본적으로 true
+        let n = 3 > 4
+        let strTrue = 'true'
+        let boolTrue = Boolean(strTrue)
+        let boolFalse = !Boolean(strTrue)
+        let boolWhat = Boolean(n)
+        console.log('boolTrue : ' + boolTrue)
+        console.log('boolFalse : ' + boolFalse)
+        console.log('boolWhat : ' + boolWhat)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
