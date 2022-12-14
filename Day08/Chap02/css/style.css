@@ -29,3 +29,64 @@ header {
     width: 300px;
     margin: 0 auto;
 }
+
+.animate-box {
+    width: 800px;
+    height: 600px;
+    background-color: lightblue;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.target-box {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    margin: 0 auto;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    width: 600px;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+button {
+    min-width: 100px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+
+button:active,
+button:hover
+{
+    background-color: royalblue;
+}
+
+
+.inner {
+    padding: 10px;
+    height: 150px;
+}
+
+#box5.active {
+    animation: changeBG 2s;
+    animation-fill-mode: forwards; /* 애니메이션 마지막 프레임에 고정 */
+}
+
+@keyframes changeBG {
+    0% { }
+
+    100% {
+        width: 600px;
+        background-color: red;}
+}
