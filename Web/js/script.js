@@ -82,6 +82,28 @@ $(function() {
         asNavFor: '.slide-container',
     })
 
+    /* 답안 */
+    /* 메뉴 열기 */
+    $('#btn-menu').on('click', function() {
+        $('header').animate({
+            'left': 0
+        }, 400)
+        $('body').animate({
+            'padding-left' : '25rem'
+        }, 400)
+        
+    })
+
+    /* 메뉴 닫기 */
+    $('#btn-close').on('click', function() {
+        $('header').animate({
+            'left': '-25rem'
+        }, 400)
+        $('body').animate({
+            'padding-left' : 0
+        }, 400)
+        
+    })
 
 
 
